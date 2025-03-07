@@ -1,6 +1,6 @@
 {
   "gitSyncId": "67cb339657847e549ba06e0a_0c24c337-b902-4ed3-88e6-d54bc9575db9",
-  "id": "Splunk_instance_InsertQuery",
+  "id": "SPLUNK INSTANCE_InsertQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": false,
     "name": "InsertQuery",
-    "pageId": "Splunk_instance",
+    "pageId": "SPLUNK INSTANCE",
     "userSetOnLoad": false
   }
 }

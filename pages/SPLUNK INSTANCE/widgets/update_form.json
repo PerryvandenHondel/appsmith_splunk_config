@@ -342,8 +342,7 @@
           "label": "Created At",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "created_at",
-          "position": 5,
-          "sourceData": null
+          "position": 5
         },
         "created_by": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -364,8 +363,7 @@
           "label": "Created By",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "created_by",
-          "position": 7,
-          "sourceData": null
+          "position": 7
         },
         "name": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -408,8 +406,7 @@
           "label": "Notes",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "notes",
-          "position": 4,
-          "sourceData": null
+          "position": 4
         },
         "updated_at": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -430,8 +427,7 @@
           "label": "Updated At",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "updated_at",
-          "position": 6,
-          "sourceData": null
+          "position": 6
         },
         "updated_by": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -452,8 +448,7 @@
           "label": "Updated By",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "updated_by",
-          "position": 8,
-          "sourceData": null
+          "position": 8
         }
       },
       "dataType": "object",

@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67cb339657847e549ba06e0a_6c8be8bd-99d5-47c8-b26c-47abc46e494f",
-  "id": "SPLUNK INSTANCE_Query1",
+  "gitSyncId": "67cb339657847e549ba06e0a_89d56653-7e9f-45a2-b0bf-b486f992f15a",
+  "id": "SPLUNK INSTANCE_DeleteQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM splunk_instance;",
+      "body": "DELETE FROM splunk_instance\n  WHERE id = {{data_table.triggeredRow.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,10 +22,9 @@
       "name": "ds_splunk_config",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [],
-    "executeOnLoad": true,
-    "name": "Query1",
+    "executeOnLoad": false,
+    "name": "DeleteQuery",
     "pageId": "SPLUNK INSTANCE",
-    "userSetOnLoad": true
+    "userSetOnLoad": false
   }
 }

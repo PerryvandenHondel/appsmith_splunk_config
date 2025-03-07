@@ -1,6 +1,6 @@
 {
   "gitSyncId": "67cb339657847e549ba06e0a_db321510-4a18-4036-a6f8-980ad19bd749",
-  "id": "Splunk_instance_SelectQuery",
+  "id": "SPLUNK INSTANCE_SelectQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": true,
     "name": "SelectQuery",
-    "pageId": "Splunk_instance",
+    "pageId": "SPLUNK INSTANCE",
     "userSetOnLoad": true
   }
 }

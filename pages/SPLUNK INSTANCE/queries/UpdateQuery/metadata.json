@@ -1,6 +1,6 @@
 {
   "gitSyncId": "67cb339657847e549ba06e0a_c8a138bc-5d09-4b8f-9618-3166844e5115",
-  "id": "Splunk_instance_UpdateQuery",
+  "id": "SPLUNK INSTANCE_UpdateQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": false,
     "name": "UpdateQuery",
-    "pageId": "Splunk_instance",
+    "pageId": "SPLUNK INSTANCE",
     "userSetOnLoad": false
   }
 }

@@ -11,10 +11,6 @@
     {
       "id": "SPLUNK INSTANCE",
       "isDefault": true
-    },
-    {
-      "id": "Splunk_instance",
-      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
