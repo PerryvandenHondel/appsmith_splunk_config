@@ -1,5 +1,8 @@
 {
   "appIsExample": false,
+  "appLayout": {
+    "type": "DESKTOP"
+  },
   "applicationVersion": 2,
   "collapseInvisibleWidgets": true,
   "color": "#F3F1C7",
@@ -8,6 +11,13 @@
     {
       "id": "SPLUNK INSTANCE",
       "isDefault": true
+    },
+    {
+      "id": "Splunk_instance",
+      "isDefault": false
     }
-  ]
+  ],
+  "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  }
 }
