@@ -328,8 +328,7 @@
           "label": "Created By",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "created_by",
-          "position": 9,
-          "sourceData": null
+          "position": 9
         },
         "ds_server": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -394,8 +393,7 @@
           "label": "Notes",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "notes",
-          "position": 6,
-          "sourceData": null
+          "position": 6
         },
         "outputs_list": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -504,8 +502,7 @@
           "label": "Updated By",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "updated_by",
-          "position": 10,
-          "sourceData": null
+          "position": 10
         }
       },
       "dataType": "object",

@@ -185,42 +185,6 @@
     },
     {
       "key": "schema.__root_schema__.children.notes.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.created_at.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.created_at.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.created_at.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.updated_at.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.updated_at.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.updated_at.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.created_by.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.created_by.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.created_by.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.updated_by.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.updated_by.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.updated_by.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -297,50 +261,6 @@
           "position": 0,
           "sourceData": "TENAN1"
         },
-        "created_at": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "created_at",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.created_at))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "created_at",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Created At",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "created_at",
-          "position": 7,
-          "sourceData": "2025-03-08T13:36:40Z"
-        },
-        "created_by": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "created_by",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.created_by))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "created_by",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Created By",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "created_by",
-          "position": 9,
-          "sourceData": null
-        },
         "ds_server": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "ds_server",
@@ -404,8 +324,7 @@
           "label": "Notes",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "notes",
-          "position": 6,
-          "sourceData": null
+          "position": 6
         },
         "outputs_list": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -472,50 +391,6 @@
           "originalIdentifier": "splunk_instance_id",
           "position": 2,
           "sourceData": "TST"
-        },
-        "updated_at": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "updated_at",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.updated_at))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "updated_at",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Updated At",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "updated_at",
-          "position": 8,
-          "sourceData": "2025-03-08T13:36:40Z"
-        },
-        "updated_by": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "updated_by",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.updated_by))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "updated_by",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Updated By",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "updated_by",
-          "position": 10,
-          "sourceData": null
         }
       },
       "dataType": "object",

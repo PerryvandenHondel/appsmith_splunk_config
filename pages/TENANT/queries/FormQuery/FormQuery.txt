@@ -1,0 +1,1 @@
+SELECT id, code, name, splunk_instance_id, ds_server, outputs_list, proxy_list, notes FROM tenant;
