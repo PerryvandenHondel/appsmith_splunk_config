@@ -11,6 +11,10 @@
     {
       "id": "SPLUNK INSTANCE",
       "isDefault": true
+    },
+    {
+      "id": "TENANT",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

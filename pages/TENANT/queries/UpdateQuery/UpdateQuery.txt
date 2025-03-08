@@ -1,0 +1,13 @@
+UPDATE tenant SET
+		code = '{{update_form.fieldState.code.isVisible ? update_form.formData.code : update_form.sourceData.code}}',
+		name = '{{update_form.fieldState.name.isVisible ? update_form.formData.name : update_form.sourceData.name}}',
+    splunk_instance_id = '{{update_form.fieldState.splunk_instance_id.isVisible ? update_form.formData.splunk_instance_id : update_form.sourceData.splunk_instance_id}}',
+		ds_server = '{{update_form.fieldState.ds_server.isVisible ? update_form.formData.ds_server : update_form.sourceData.ds_server}}',
+		outputs_list = '{{update_form.fieldState.outputs_list.isVisible ? update_form.formData.outputs_list : update_form.sourceData.outputs_list}}',
+		proxy_list = '{{update_form.fieldState.proxy_list.isVisible ? update_form.formData.proxy_list : update_form.sourceData.proxy_list}}',
+		notes = '{{update_form.fieldState.notes.isVisible ? update_form.formData.notes : update_form.sourceData.notes}}',
+		created_at = '{{update_form.fieldState.created_at.isVisible ? update_form.formData.created_at : update_form.sourceData.created_at}}',
+		updated_at = '{{update_form.fieldState.updated_at.isVisible ? update_form.formData.updated_at : update_form.sourceData.updated_at}}',
+		created_by = '{{update_form.fieldState.created_by.isVisible ? update_form.formData.created_by : update_form.sourceData.created_by}}',
+		updated_by = '{{update_form.fieldState.updated_by.isVisible ? update_form.formData.updated_by : update_form.sourceData.updated_by}}'
+  WHERE id = {{data_table.selectedRow.id}};
