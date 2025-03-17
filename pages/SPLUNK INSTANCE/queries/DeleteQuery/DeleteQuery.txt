@@ -1,0 +1,2 @@
+DELETE FROM splunk_instance
+  WHERE id = {{data_table.triggeredRow.id}};
