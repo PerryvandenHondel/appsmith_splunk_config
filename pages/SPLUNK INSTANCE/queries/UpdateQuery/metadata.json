@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67d8685680675b5020eaa603_1cb7ce8b-8817-4767-8248-d5c1408735c2",
+  "gitSyncId": "67d8685680675b5020eaa603_f1c89494-df10-40db-b429-c95656446679",
   "id": "SPLUNK INSTANCE_UpdateQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE splunk_instance SET\n\t\tcode = '{{update_form.fieldState.code.isVisible ? update_form.formData.code : update_form.sourceData.code}}',\n\t\tdescription = '{{update_form.fieldState.description.isVisible ? update_form.formData.description : update_form.sourceData.description}}',\n    architecture = '{{update_form.fieldState.architecture.isVisible ? update_form.formData.architecture : update_form.sourceData.architecture}}',\n\t\taccount_provider = '{{update_form.fieldState.account_provider.isVisible ? update_form.formData.account_provider : update_form.sourceData.account_provider}}',\n\t\tnotes = '{{update_form.fieldState.notes.isVisible ? update_form.formData.notes : update_form.sourceData.notes}}'\nWHERE id = {{data_table.selectedRow.id}};",
+      "body": "UPDATE splunk_instance SET\n\t\tcode = '{{update_form.fieldState.code.isVisible ? update_form.formData.code : update_form.sourceData.code}}',\n\t\tarchitecture = '{{update_form.fieldState.architecture.isVisible ? update_form.formData.architecture : update_form.sourceData.architecture}}',\n    account_provider = '{{update_form.fieldState.account_provider.isVisible ? update_form.formData.account_provider : update_form.sourceData.account_provider}}',\n\t\tnotes = '{{update_form.fieldState.notes.isVisible ? update_form.formData.notes : update_form.sourceData.notes}}'\nWHERE description = {{data_table.selectedRow.description}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

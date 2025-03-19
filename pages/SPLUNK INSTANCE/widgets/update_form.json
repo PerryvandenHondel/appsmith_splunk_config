@@ -124,15 +124,6 @@
       "key": "boxShadow"
     },
     {
-      "key": "schema.__root_schema__.children.id.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.id.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.id.accentColor"
-    },
-    {
       "key": "schema.__root_schema__.children.code.defaultValue"
     },
     {
@@ -203,7 +194,7 @@
   "hideCard": false,
   "iconSVG": "/static/media/icon.6bacf7df.svg",
   "isLoading": false,
-  "isVisible": "{{!!data_table.selectedRow.id}}",
+  "isVisible": "{{!!data_table.selectedRow.description}}",
   "key": "h9l9ozr8op",
   "labelTextSize": "0.875rem",
   "leftColumn": 39,
@@ -249,7 +240,7 @@
           "label": "Account Provider",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "account_provider",
-          "position": 4,
+          "position": 3,
           "sourceData": "dc01.domain.net"
         },
         "architecture": {
@@ -271,7 +262,7 @@
           "label": "Architecture",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "architecture",
-          "position": 3,
+          "position": 2,
           "sourceData": "idxc+shc"
         },
         "code": {
@@ -293,7 +284,7 @@
           "label": "Code",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "code",
-          "position": 1,
+          "position": 0,
           "sourceData": "SKP"
         },
         "description": {
@@ -315,30 +306,8 @@
           "label": "Description",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "description",
-          "position": 2,
+          "position": 1,
           "sourceData": "Splunk Production"
-        },
-        "id": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "id",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.id))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
-          "identifier": "id",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Id",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "id",
-          "position": 0,
-          "sourceData": 1
         },
         "notes": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -359,7 +328,7 @@
           "label": "Notes",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "notes",
-          "position": 5,
+          "position": 4,
           "sourceData": "No notes"
         }
       },
@@ -393,7 +362,7 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"
   },
-  "title": "Update Row id: {{data_table.selectedRow.id}}",
+  "title": "Update Row description: {{data_table.selectedRow.description}}",
   "topRow": 0,
   "type": "JSON_FORM_WIDGET",
   "version": 1,

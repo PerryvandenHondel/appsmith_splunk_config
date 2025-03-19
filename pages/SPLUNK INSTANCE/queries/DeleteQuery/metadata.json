@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67d8685680675b5020eaa603_3288e03a-0998-4669-86c9-d6dd8a488b0c",
+  "gitSyncId": "67d8685680675b5020eaa603_6bf51360-1871-4d62-aa74-d9986e80efd1",
   "id": "SPLUNK INSTANCE_DeleteQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM splunk_instance\n  WHERE id = {{data_table.triggeredRow.id}};",
+      "body": "DELETE FROM splunk_instance\n  WHERE description = {{data_table.triggeredRow.description}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

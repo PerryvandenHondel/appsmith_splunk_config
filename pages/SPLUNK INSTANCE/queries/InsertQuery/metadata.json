@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67d8685680675b5020eaa603_f382e589-9790-4f7c-8678-364335e52a83",
+  "gitSyncId": "67d8685680675b5020eaa603_ecbf3933-3de0-4028-9679-8fb4a0659d27",
   "id": "SPLUNK INSTANCE_InsertQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO splunk_instance (\n\tid,\n\tcode,\n\tdescription,\n\tarchitecture,\n\taccount_provider,\n\tnotes)\nVALUES (\n\t'{{insert_form.formData.id}}',\n\t'{{insert_form.formData.code}}',\n\t'{{insert_form.formData.description}}',\n\t'{{insert_form.formData.architecture}}',\n\t'{{insert_form.formData.account_provider}}',\n\t'{{insert_form.formData.notes}}');",
+      "body": "INSERT INTO splunk_instance (\n\tdescription,\n\tcode,\n\tarchitecture,\n\taccount_provider,\n\tnotes)\nVALUES (\n\t'{{insert_form.formData.description}}',\n\t'{{insert_form.formData.code}}',\n\t'{{insert_form.formData.architecture}}',\n\t'{{insert_form.formData.account_provider}}',\n\t'{{insert_form.formData.notes}}');",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

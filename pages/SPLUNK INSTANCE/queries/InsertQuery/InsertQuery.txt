@@ -1,14 +1,12 @@
 INSERT INTO splunk_instance (
-	id,
-	code,
 	description,
+	code,
 	architecture,
 	account_provider,
 	notes)
 VALUES (
-	'{{insert_form.formData.id}}',
-	'{{insert_form.formData.code}}',
 	'{{insert_form.formData.description}}',
+	'{{insert_form.formData.code}}',
 	'{{insert_form.formData.architecture}}',
 	'{{insert_form.formData.account_provider}}',
 	'{{insert_form.formData.notes}}');
