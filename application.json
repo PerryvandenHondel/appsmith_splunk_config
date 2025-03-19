@@ -8,6 +8,10 @@
     {
       "id": "SPLUNK INSTANCE",
       "isDefault": true
+    },
+    {
+      "id": "SPLUNK ARCHITECTURE",
+      "isDefault": false
     }
   ]
 }
