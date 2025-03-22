@@ -4,7 +4,7 @@ INSERT INTO architecture (
 	description,
 	notes)
 VALUES (
-	'{{insert_form.formData.id}}',
+	Null,
 	'{{insert_form.formData.code}}',
 	'{{insert_form.formData.description}}',
 	'{{insert_form.formData.notes}}');

@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO architecture (\n\tid,\n\tcode,\n\tdescription,\n\tnotes)\nVALUES (\n\t'{{insert_form.formData.id}}',\n\t'{{insert_form.formData.code}}',\n\t'{{insert_form.formData.description}}',\n\t'{{insert_form.formData.notes}}');",
+      "body": "INSERT INTO architecture (\n\tid,\n\tcode,\n\tdescription,\n\tnotes)\nVALUES (\n\tNull,\n\t'{{insert_form.formData.code}}',\n\t'{{insert_form.formData.description}}',\n\t'{{insert_form.formData.notes}}');",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,6 +22,11 @@
       "name": "splunk_config_ds",
       "pluginId": "mysql-plugin"
     },
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "executeOnLoad": false,
     "name": "InsertQuery",
     "pageId": "ARCHITECTURE",
