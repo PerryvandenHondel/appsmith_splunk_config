@@ -349,7 +349,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.use_tenant))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "defaultValue": false,
           "fieldType": "Select",
           "identifier": "use_tenant",
           "isCustomField": false,
