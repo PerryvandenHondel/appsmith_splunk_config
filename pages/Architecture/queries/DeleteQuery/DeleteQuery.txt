@@ -1,0 +1,2 @@
+DELETE FROM architecture
+  WHERE id = {{data_table.triggeredRow.id}};

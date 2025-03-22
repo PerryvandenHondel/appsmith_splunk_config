@@ -1,0 +1,10 @@
+INSERT INTO architecture (
+	id,
+	code,
+	description,
+	notes)
+VALUES (
+	'{{insert_form.formData.id}}',
+	'{{insert_form.formData.code}}',
+	'{{insert_form.formData.description}}',
+	'{{insert_form.formData.notes}}');
