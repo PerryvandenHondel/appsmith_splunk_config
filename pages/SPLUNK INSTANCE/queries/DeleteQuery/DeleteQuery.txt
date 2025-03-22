@@ -1,2 +1,0 @@
-DELETE FROM splunk_instance
-  WHERE description = {{data_table.triggeredRow.description}};

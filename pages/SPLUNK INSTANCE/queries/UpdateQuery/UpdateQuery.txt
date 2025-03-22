@@ -1,6 +1,0 @@
-UPDATE splunk_instance SET
-		code = '{{update_form.fieldState.code.isVisible ? update_form.formData.code : update_form.sourceData.code}}',
-		architecture = '{{update_form.fieldState.architecture.isVisible ? update_form.formData.architecture : update_form.sourceData.architecture}}',
-    account_provider = '{{update_form.fieldState.account_provider.isVisible ? update_form.formData.account_provider : update_form.sourceData.account_provider}}',
-		notes = '{{update_form.fieldState.notes.isVisible ? update_form.formData.notes : update_form.sourceData.notes}}'
-WHERE description = {{data_table.selectedRow.description}};

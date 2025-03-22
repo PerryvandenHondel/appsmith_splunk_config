@@ -1,23 +1,24 @@
 {
-  "gitSyncId": "67d8685680675b5020eaa603_58f6a500-e9c5-4db2-91c0-49d6c2a078ef",
+  "gitSyncId": "67d8685680675b5020eaa603_0e0a1c81-3c13-4849-a579-81a0a5c0d646",
   "unpublishedPage": {
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 380,
+          "bottomRow": 890,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
+          "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "minHeight": 810,
+          "minHeight": 890,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 1224,
+          "rightColumn": 1174,
           "snapColumns": 64,
-          "snapRows": 79,
+          "snapRows": 125,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 91,
@@ -26,7 +27,7 @@
         }
       }
     ],
-    "name": "HOME",
-    "slug": "home"
+    "name": "TENANT",
+    "slug": "tenant"
   }
 }

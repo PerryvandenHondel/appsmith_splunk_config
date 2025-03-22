@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67d8685680675b5020eaa603_95ab8e83-a384-49a4-9541-ef8b03b35d6a",
-  "id": "INSTANCE_DeleteQuery",
+  "gitSyncId": "67d8685680675b5020eaa603_c81dcb66-51c4-4d8e-b9e8-b76d7d4daca4",
+  "id": "TENANT_DeleteQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM instance\n  WHERE id = {{data_table.triggeredRow.id}};",
+      "body": "DELETE FROM tenant\n  WHERE id = {{data_table.triggeredRow.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": false,
     "name": "DeleteQuery",
-    "pageId": "INSTANCE",
+    "pageId": "TENANT",
     "userSetOnLoad": false
   }
 }

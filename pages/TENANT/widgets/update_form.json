@@ -2,9 +2,10 @@
   "animateLoading": true,
   "autoGenerateForm": true,
   "backgroundColor": "#fff",
+  "borderColor": "#2E3D4955",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "borderWidth": "",
-  "bottomRow": 58,
+  "borderWidth": "0",
+  "bottomRow": 89,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -93,16 +94,16 @@
       "key": "sourceData"
     },
     {
+      "key": "isVisible"
+    },
+    {
       "key": "schema.__root_schema__.borderRadius"
     },
     {
       "key": "schema.__root_schema__.cellBorderRadius"
     },
     {
-      "key": "borderRadius"
-    },
-    {
-      "key": "boxShadow"
+      "key": "title"
     },
     {
       "key": "submitButtonStyles.buttonColor"
@@ -111,10 +112,16 @@
       "key": "submitButtonStyles.borderRadius"
     },
     {
+      "key": "resetButtonStyles.borderRadius"
+    },
+    {
       "key": "resetButtonStyles.buttonColor"
     },
     {
-      "key": "resetButtonStyles.borderRadius"
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
     },
     {
       "key": "schema.__root_schema__.children.code.defaultValue"
@@ -135,40 +142,40 @@
       "key": "schema.__root_schema__.children.description.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.architecture.defaultValue"
+      "key": "schema.__root_schema__.children.splunk_instance_code.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.architecture.borderRadius"
+      "key": "schema.__root_schema__.children.splunk_instance_code.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.architecture.accentColor"
+      "key": "schema.__root_schema__.children.splunk_instance_code.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.account_provider.defaultValue"
+      "key": "schema.__root_schema__.children.deployment_server.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.account_provider.borderRadius"
+      "key": "schema.__root_schema__.children.deployment_server.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.account_provider.accentColor"
+      "key": "schema.__root_schema__.children.deployment_server.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.use_tenant.defaultValue"
+      "key": "schema.__root_schema__.children.outputs_server_list.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.use_tenant.borderRadius"
+      "key": "schema.__root_schema__.children.outputs_server_list.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.use_tenant.accentColor"
+      "key": "schema.__root_schema__.children.outputs_server_list.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.use_otap.defaultValue"
+      "key": "schema.__root_schema__.children.proxy_server_list.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.use_otap.borderRadius"
+      "key": "schema.__root_schema__.children.proxy_server_list.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.use_otap.accentColor"
+      "key": "schema.__root_schema__.children.proxy_server_list.accentColor"
     },
     {
       "key": "schema.__root_schema__.children.notes.defaultValue"
@@ -184,6 +191,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
+    },
+    {
+      "key": "isVisible"
     },
     {
       "key": "borderRadius"
@@ -202,15 +212,15 @@
   "hideCard": false,
   "iconSVG": "/static/media/icon.6bacf7df.svg",
   "isLoading": false,
-  "isVisible": "true",
+  "isVisible": "{{!!data_table.selectedRow.id}}",
   "key": "h9l9ozr8op",
   "labelTextSize": "0.875rem",
-  "leftColumn": 0,
+  "leftColumn": 39,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "onSubmit": "{{InsertQuery.run(\n\t() => SelectQuery.run()\n\t\t\t\t\t.then(() => closeModal('Insert_Modal')), \n\t(error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
+  "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
   "parentColumnSpace": 16.3125,
-  "parentId": "9rhv3ioohq",
+  "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetButtonLabel": "Reset",
@@ -229,58 +239,14 @@
       "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
       "cellBoxShadow": "none",
       "children": {
-        "account_provider": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "accessor": "account_provider",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.account_provider))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "account_provider",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Account Provider",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "account_provider",
-          "position": 3,
-          "sourceData": "dc01.domain.net"
-        },
-        "architecture": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "accessor": "architecture",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.architecture))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "architecture",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Architecture",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "architecture",
-          "position": 2,
-          "sourceData": "SI"
-        },
         "code": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "code",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.code))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.code))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "code",
@@ -293,16 +259,38 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "code",
           "position": 0,
-          "sourceData": "SKA"
+          "sourceData": "ZZZZZZ"
         },
-        "description": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "accessor": "description",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+        "deployment_server": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "deployment_server",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.description))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.deployment_server))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "deployment_server",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Deployment Server",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "deployment_server",
+          "position": 3,
+          "sourceData": "server.dm.com"
+        },
+        "description": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "description",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.description))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "description",
@@ -315,16 +303,16 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "description",
           "position": 1,
-          "sourceData": "Instance Splunk Acceptance"
+          "sourceData": "ZZ Tenant"
         },
         "notes": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "notes",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.notes))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.notes))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "notes",
@@ -337,55 +325,77 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "notes",
           "position": 6,
-          "sourceData": "none"
+          "sourceData": "None"
         },
-        "use_otap": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "accessor": "use_otap",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+        "outputs_server_list": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "outputs_server_list",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.use_otap))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.outputs_server_list))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
-          "identifier": "use_otap",
+          "identifier": "outputs_server_list",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Use Otap",
+          "label": "Outputs Server List",
           "labelTextSize": "0.875rem",
-          "originalIdentifier": "use_otap",
-          "position": 5,
-          "sourceData": "DTAP"
-        },
-        "use_tenant": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "accessor": "use_tenant",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.use_tenant))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "use_tenant",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Use Tenant",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "use_tenant",
+          "originalIdentifier": "outputs_server_list",
           "position": 4,
-          "sourceData": "N"
+          "sourceData": "out.dom.com"
+        },
+        "proxy_server_list": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "proxy_server_list",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.proxy_server_list))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "proxy_server_list",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Proxy Server List",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "proxy_server_list",
+          "position": 5,
+          "sourceData": "192.1.1.1:8020; 192.1.1.2;8020; 129.2.3.4"
+        },
+        "splunk_instance_code": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "splunk_instance_code",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.splunk_instance_code))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "splunk_instance_code",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Splunk Instance Code",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "splunk_instance_code",
+          "position": 2,
+          "sourceData": "ABC"
         }
       },
       "dataType": "object",
-      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
       "fieldType": "Object",
       "identifier": "__root_schema__",
       "isCustomField": false,
@@ -406,18 +416,18 @@
   },
   "scrollContents": true,
   "showReset": true,
-  "sourceData": "{{_.omit(data_table.tableData[0], \"customColumn1\", \"id\")}}",
-  "submitButtonLabel": "Submit",
+  "sourceData": "{{_.omit(data_table.selectedRow, \"customColumn1\", \"__originalIndex__\", \"id\")}}",
+  "submitButtonLabel": "Update",
   "submitButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "boxShadow": "none",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"
   },
-  "title": "Insert Row",
+  "title": "Update Row id: {{data_table.selectedRow.id}}",
   "topRow": 0,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
-  "widgetId": "w10l8merz2",
-  "widgetName": "insert_form"
+  "widgetId": "6g4ewsx2v0",
+  "widgetName": "update_form"
 }

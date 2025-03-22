@@ -6,20 +6,16 @@
   "evaluationVersion": 2,
   "pages": [
     {
-      "id": "SPLUNK INSTANCE",
-      "isDefault": false
-    },
-    {
-      "id": "SPLUNK ARCHITECTURE",
-      "isDefault": false
+      "id": "HOME",
+      "isDefault": true
     },
     {
       "id": "INSTANCE",
       "isDefault": false
     },
     {
-      "id": "HOME",
-      "isDefault": true
+      "id": "TENANT",
+      "isDefault": false
     }
   ]
 }

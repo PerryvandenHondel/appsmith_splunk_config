@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67d8685680675b5020eaa603_cfa1384d-2a20-446e-a49f-0fb8465ffdde",
+  "gitSyncId": "67d8685680675b5020eaa603_b8ec00dc-1876-4e00-a383-e1a9f8407414",
   "id": "INSTANCE_InsertQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO instance (\n\tcode,\n\tdescription,\n\tarchitecture,\n\tuse_tenant,\n\tuse_otap,\n\tnotes)\nVALUES (\n\t'{{insert_form.formData.code}}',\n\t'{{insert_form.formData.description}}',\n\t'{{insert_form.formData.architecture}}',\n\t'{{insert_form.formData.use_tenant}}',\n\t'{{insert_form.formData.use_otap}}',\n\t'{{insert_form.formData.notes}}');",
+      "body": "INSERT INTO instance (\n\tcode,\n\tdescription,\n\tarchitecture,\n\taccount_provider,\n\tuse_tenant,\n\tuse_otap,\n\tnotes)\nVALUES (\n\t'{{insert_form.formData.code}}',\n\t'{{insert_form.formData.description}}',\n\t'{{insert_form.formData.architecture}}',\n\t'{{insert_form.formData.account_provider}}',\n\t'{{insert_form.formData.use_tenant}}',\n\t'{{insert_form.formData.use_otap}}',\n\t'{{insert_form.formData.notes}}');",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

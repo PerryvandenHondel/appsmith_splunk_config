@@ -1,0 +1,9 @@
+UPDATE tenant SET
+		code = '{{update_form.fieldState.code.isVisible ? update_form.formData.code : update_form.sourceData.code}}',
+		description = '{{update_form.fieldState.description.isVisible ? update_form.formData.description : update_form.sourceData.description}}',
+    splunk_instance_code = '{{update_form.fieldState.splunk_instance_code.isVisible ? update_form.formData.splunk_instance_code : update_form.sourceData.splunk_instance_code}}',
+		deployment_server = '{{update_form.fieldState.deployment_server.isVisible ? update_form.formData.deployment_server : update_form.sourceData.deployment_server}}',
+		outputs_server_list = '{{update_form.fieldState.outputs_server_list.isVisible ? update_form.formData.outputs_server_list : update_form.sourceData.outputs_server_list}}',
+		proxy_server_list = '{{update_form.fieldState.proxy_server_list.isVisible ? update_form.formData.proxy_server_list : update_form.sourceData.proxy_server_list}}',
+		notes = '{{update_form.fieldState.notes.isVisible ? update_form.formData.notes : update_form.sourceData.notes}}'
+WHERE id = {{data_table.selectedRow.id}};

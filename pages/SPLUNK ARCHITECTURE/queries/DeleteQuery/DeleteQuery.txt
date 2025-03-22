@@ -1,2 +1,0 @@
-DELETE FROM splunk_architecture
-  WHERE id = {{data_table.triggeredRow.id}};

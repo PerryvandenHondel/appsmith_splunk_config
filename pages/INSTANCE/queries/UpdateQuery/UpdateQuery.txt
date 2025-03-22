@@ -2,6 +2,7 @@ UPDATE instance SET
 		code = '{{update_form.fieldState.code.isVisible ? update_form.formData.code : update_form.sourceData.code}}',
 		description = '{{update_form.fieldState.description.isVisible ? update_form.formData.description : update_form.sourceData.description}}',
     architecture = '{{update_form.fieldState.architecture.isVisible ? update_form.formData.architecture : update_form.sourceData.architecture}}',
+		account_provider = '{{update_form.fieldState.account_provider.isVisible ? update_form.formData.account_provider : update_form.sourceData.account_provider}}',
 		use_tenant = '{{update_form.fieldState.use_tenant.isVisible ? update_form.formData.use_tenant : update_form.sourceData.use_tenant}}',
 		use_otap = '{{update_form.fieldState.use_otap.isVisible ? update_form.formData.use_otap : update_form.sourceData.use_otap}}',
 		notes = '{{update_form.fieldState.notes.isVisible ? update_form.formData.notes : update_form.sourceData.notes}}'

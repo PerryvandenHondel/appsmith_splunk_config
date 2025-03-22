@@ -145,7 +145,19 @@
       "key": "schema.__root_schema__.children.architecture.defaultValue"
     },
     {
+      "key": "schema.__root_schema__.children.architecture.borderRadius"
+    },
+    {
       "key": "schema.__root_schema__.children.architecture.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.account_provider.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.account_provider.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.account_provider.accentColor"
     },
     {
       "key": "schema.__root_schema__.children.use_tenant.defaultValue"
@@ -160,6 +172,9 @@
       "key": "schema.__root_schema__.children.use_otap.defaultValue"
     },
     {
+      "key": "schema.__root_schema__.children.use_otap.borderRadius"
+    },
+    {
       "key": "schema.__root_schema__.children.use_otap.accentColor"
     },
     {
@@ -170,12 +185,6 @@
     },
     {
       "key": "schema.__root_schema__.children.notes.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.architecture.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.use_otap.borderRadius"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -230,6 +239,28 @@
       "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
       "cellBoxShadow": "none",
       "children": {
+        "account_provider": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "account_provider",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.account_provider))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "account_provider",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Account Provider",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "account_provider",
+          "position": 3,
+          "sourceData": "dc01.domain.net"
+        },
         "architecture": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "architecture",
@@ -238,19 +269,18 @@
           "children": {},
           "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.architecture))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Select",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
           "identifier": "architecture",
           "isCustomField": false,
           "isDisabled": false,
-          "isFilterable": false,
           "isRequired": false,
+          "isSpellCheck": false,
           "isVisible": true,
           "label": "Architecture",
           "labelTextSize": "0.875rem",
-          "options": "[\n  {\n    \"label\": \"Single Instance\",\n    \"value\": \"SI\"\n  },\n  {\n    \"label\": \"Index Cluster with Search Head\",\n    \"value\": \"IDXC+SH\"\n  },\n  {\n    \"label\": \"Index Cluster with Search Head Cluster\",\n    \"value\": \"IDXC+SHC\"\n  },\n\t{\n    \"label\": \"Index Cluster, Search Head Cluster and Enterprise Security\",\n    \"value\": \"IDXC+SHC+ES\"\n  }\n]",
           "originalIdentifier": "architecture",
           "position": 2,
-          "serverSideFiltering": false,
           "sourceData": "SI"
         },
         "code": {
@@ -316,7 +346,7 @@
           "label": "Notes",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "notes",
-          "position": 5,
+          "position": 6,
           "sourceData": "none"
         },
         "use_otap": {
@@ -327,19 +357,18 @@
           "children": {},
           "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.use_otap))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Select",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
           "identifier": "use_otap",
           "isCustomField": false,
           "isDisabled": false,
-          "isFilterable": false,
           "isRequired": false,
+          "isSpellCheck": false,
           "isVisible": true,
           "label": "Use Otap",
           "labelTextSize": "0.875rem",
-          "options": "[\n\t{\n    \"label\": \"None\",\n    \"value\": \"NONE\"\n  },\n  {\n    \"label\": \"DTAP (4 levels)\",\n    \"value\": \"DTAP\"\n  },\n  {\n    \"label\": \"OTA/PRD (2 levels)\",\n    \"value\": \"OTAPRD\"\n  }\n]",
           "originalIdentifier": "use_otap",
-          "position": 4,
-          "serverSideFiltering": false,
+          "position": 5,
           "sourceData": "DTAP"
         },
         "use_tenant": {
@@ -349,20 +378,19 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": false,
-          "fieldType": "Select",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.use_tenant))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
           "identifier": "use_tenant",
           "isCustomField": false,
           "isDisabled": false,
-          "isFilterable": false,
           "isRequired": false,
+          "isSpellCheck": false,
           "isVisible": true,
           "label": "Use Tenant",
           "labelTextSize": "0.875rem",
-          "options": "[\n  {\n    \"label\": \"Yes\",\n    \"value\": \"Y\"\n  },\n  {\n    \"label\": \"No\",\n    \"value\": \"N\"\n  }\n]",
           "originalIdentifier": "use_tenant",
-          "position": 3,
-          "serverSideFiltering": false,
+          "position": 4,
           "sourceData": "N"
         }
       },

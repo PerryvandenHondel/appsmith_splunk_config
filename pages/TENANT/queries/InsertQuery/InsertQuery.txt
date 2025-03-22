@@ -1,0 +1,16 @@
+INSERT INTO tenant (
+	code,
+	description,
+	splunk_instance_code,
+	deployment_server,
+	outputs_server_list,
+	proxy_server_list,
+	notes)
+VALUES (
+	'{{insert_form.formData.code}}',
+	'{{insert_form.formData.description}}',
+	'{{insert_form.formData.splunk_instance_code}}',
+	'{{insert_form.formData.deployment_server}}',
+	'{{insert_form.formData.outputs_server_list}}',
+	'{{insert_form.formData.proxy_server_list}}',
+	'{{insert_form.formData.notes}}');
