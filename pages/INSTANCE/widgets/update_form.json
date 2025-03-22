@@ -145,9 +145,6 @@
       "key": "schema.__root_schema__.children.architecture.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.architecture.borderRadius"
-    },
-    {
       "key": "schema.__root_schema__.children.architecture.accentColor"
     },
     {
@@ -163,9 +160,6 @@
       "key": "schema.__root_schema__.children.use_otap.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.use_otap.borderRadius"
-    },
-    {
       "key": "schema.__root_schema__.children.use_otap.accentColor"
     },
     {
@@ -176,6 +170,12 @@
     },
     {
       "key": "schema.__root_schema__.children.notes.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.architecture.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.use_otap.borderRadius"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -238,18 +238,19 @@
           "children": {},
           "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.architecture))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "fieldType": "Select",
           "identifier": "architecture",
           "isCustomField": false,
           "isDisabled": false,
+          "isFilterable": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": true,
           "label": "Architecture",
           "labelTextSize": "0.875rem",
+          "options": "[\n  {\n    \"label\": \"Single Instance\",\n    \"value\": \"SI\"\n  },\n  {\n    \"label\": \"Index Cluster with Search Head\",\n    \"value\": \"IDXC+SH\"\n  },\n  {\n    \"label\": \"Index Cluster with Search Head Cluster\",\n    \"value\": \"IDXC+SHC\"\n  },\n\t{\n    \"label\": \"Index Cluster, Search Head Cluster and Enterprise Security\",\n    \"value\": \"IDXC+SHC+ES\"\n  }\n]",
           "originalIdentifier": "architecture",
           "position": 2,
+          "serverSideFiltering": false,
           "sourceData": "SI"
         },
         "code": {
@@ -326,18 +327,19 @@
           "children": {},
           "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.use_otap))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "fieldType": "Select",
           "identifier": "use_otap",
           "isCustomField": false,
           "isDisabled": false,
+          "isFilterable": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": true,
           "label": "Use Otap",
           "labelTextSize": "0.875rem",
+          "options": "[\n\t{\n    \"label\": \"None\",\n    \"value\": \"NONE\"\n  },\n  {\n    \"label\": \"DTAP (4 levels)\",\n    \"value\": \"DTAP\"\n  },\n  {\n    \"label\": \"OTA/PRD (2 levels)\",\n    \"value\": \"OTAPRD\"\n  }\n]",
           "originalIdentifier": "use_otap",
           "position": 4,
+          "serverSideFiltering": false,
           "sourceData": "DTAP"
         },
         "use_tenant": {
@@ -348,18 +350,19 @@
           "children": {},
           "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.use_tenant))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "fieldType": "Select",
           "identifier": "use_tenant",
           "isCustomField": false,
           "isDisabled": false,
+          "isFilterable": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": true,
           "label": "Use Tenant",
           "labelTextSize": "0.875rem",
+          "options": "[\n  {\n    \"label\": \"Yes\",\n    \"value\": \"Y\"\n  },\n  {\n    \"label\": \"No\",\n    \"value\": \"N\"\n  }\n]",
           "originalIdentifier": "use_tenant",
           "position": 3,
+          "serverSideFiltering": false,
           "sourceData": "N"
         }
       },
