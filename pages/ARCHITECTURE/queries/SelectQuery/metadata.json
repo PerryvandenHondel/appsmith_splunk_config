@@ -1,6 +1,6 @@
 {
   "gitSyncId": "67d8685680675b5020eaa603_2c3af55f-001a-4134-8ebf-e857e2fe34ac",
-  "id": "Architecture_SelectQuery",
+  "id": "ARCHITECTURE_SelectQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": true,
     "name": "SelectQuery",
-    "pageId": "Architecture",
+    "pageId": "ARCHITECTURE",
     "userSetOnLoad": true
   }
 }

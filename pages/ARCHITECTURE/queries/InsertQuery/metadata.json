@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67d8685680675b5020eaa603_438006ef-32ae-45c8-acee-40b045d4085e",
-  "id": "Architecture_DeleteQuery",
+  "gitSyncId": "67d8685680675b5020eaa603_9d3bc639-2282-4fba-8408-b2b1bbccb044",
+  "id": "ARCHITECTURE_InsertQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM architecture\n  WHERE id = {{data_table.triggeredRow.id}};",
+      "body": "INSERT INTO architecture (\n\tid,\n\tcode,\n\tdescription,\n\tnotes)\nVALUES (\n\t'{{insert_form.formData.id}}',\n\t'{{insert_form.formData.code}}',\n\t'{{insert_form.formData.description}}',\n\t'{{insert_form.formData.notes}}');",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -23,8 +23,8 @@
       "pluginId": "mysql-plugin"
     },
     "executeOnLoad": false,
-    "name": "DeleteQuery",
-    "pageId": "Architecture",
+    "name": "InsertQuery",
+    "pageId": "ARCHITECTURE",
     "userSetOnLoad": false
   }
 }

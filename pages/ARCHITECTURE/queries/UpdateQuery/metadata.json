@@ -1,6 +1,6 @@
 {
   "gitSyncId": "67d8685680675b5020eaa603_5fdda562-df63-4bea-bbe2-adf7f3a2ddde",
-  "id": "Architecture_UpdateQuery",
+  "id": "ARCHITECTURE_UpdateQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": false,
     "name": "UpdateQuery",
-    "pageId": "Architecture",
+    "pageId": "ARCHITECTURE",
     "userSetOnLoad": false
   }
 }

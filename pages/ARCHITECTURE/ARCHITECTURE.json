@@ -1,6 +1,7 @@
 {
   "gitSyncId": "67d8685680675b5020eaa603_119ebaa8-ccd2-400a-bc1a-4ee96b4c26af",
   "unpublishedPage": {
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
@@ -26,7 +27,7 @@
         }
       }
     ],
-    "name": "Architecture",
+    "name": "ARCHITECTURE",
     "slug": "architecture"
   }
 }
