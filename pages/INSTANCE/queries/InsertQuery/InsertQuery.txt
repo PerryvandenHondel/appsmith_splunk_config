@@ -1,0 +1,14 @@
+INSERT INTO instance (
+	code,
+	description,
+	architecture,
+	use_tenant,
+	use_otap,
+	notes)
+VALUES (
+	'{{insert_form.formData.code}}',
+	'{{insert_form.formData.description}}',
+	'{{insert_form.formData.architecture}}',
+	'{{insert_form.formData.use_tenant}}',
+	'{{insert_form.formData.use_otap}}',
+	'{{insert_form.formData.notes}}');

@@ -7,11 +7,19 @@
   "pages": [
     {
       "id": "SPLUNK INSTANCE",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "id": "SPLUNK ARCHITECTURE",
       "isDefault": false
+    },
+    {
+      "id": "INSTANCE",
+      "isDefault": false
+    },
+    {
+      "id": "HOME",
+      "isDefault": true
     }
   ]
 }
